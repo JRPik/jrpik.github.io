@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,27 +15,22 @@ export default function Home() {
         <div className={styles.bar}>
           <ul>
             <li className={styles.navLine}>
-              <a className={styles.navLineText} href="/">
+              <Link className={styles.navLineText} href="/">
                 {"<home>"}
-              </a>
+              </Link>
             </li>
             <li className={styles.navLine}>
-              <a className={styles.navLineText} href="about">
+              <Link className={styles.navLineText} href="about">
                 {"<about>"}
-              </a>
+              </Link>
             </li>
             <li className={styles.navLine}>
-              <a className={styles.navLineTextActive} href="projects">
+              <Link className={styles.navLineTextActive} href="projects">
                 {"<projects>"}
-              </a>
-            </li>
-            <li className={styles.navLine}>
-              <a className={styles.navLineText} href="contact">
-                {"<contact>"}
-              </a>
+              </Link>
             </li>
             <li className={styles.navLineLast}>
-              <a
+              <Link
                 className={styles.navImage}
                 href="https://github.com/Voiduhh"
                 title="Github"
@@ -42,17 +38,17 @@ export default function Home() {
               >
                 <img src="Layer 3.png" />
                 <img src="Layer 3Hover.png" />
-              </a>
+              </Link>
             </li>
             <li className={styles.navLineLast}>
-              <a
+              <Link
                 className={styles.navImage}
                 href="https://www.linkedin.com/in/jacobpikul/"
                 target="_blank"
               >
                 <img src="Layer 4.png" />
                 <img src="Layer 4Hover.png" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
