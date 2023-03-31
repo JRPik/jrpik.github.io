@@ -1,0 +1,192 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.navLine{
+  display: inline;
+  padding-right: 3%;
+}
+.navLineLast{
+  display: inline;
+  float: right;
+  padding-right: 3%;
+}
+.navImage img{
+  width: 35px;
+}
+.navImage img:last-child{
+  display: none;
+  transition: display 5s;
+}
+.navImage img:first-child:hover{
+  display: none;
+}
+.navImage:hover img:last-child{
+  display: block;
+  filter: drop-shadow(0px 0px 10px rgb(36,178,0));
+  transition-delay: 5s;
+}
+.navLineText {
+  color: rgb(96,90,213);
+  font-size: 30px;
+}
+.navLineTextActive {
+  color:  rgb(36,178,0);
+  text-shadow: 0 0px 15px rgb(36,178,0);
+  font-size: 30px;
+}
+.navLineText:hover {
+  color: rgb(36,178,0);
+  text-shadow: 0 0px 15px rgb(36,178,0);
+  font-size: 30px;
+}
+.bar{
+  background-color: rgb(25, 25, 25);
+  padding: 2rem;
+  box-shadow: 0 0 25px 20px rgb(25, 25, 25);
+}
+.bodyContent{
+  padding-bottom: 7%;
+  padding-left: 12%;
+  position: relative;
+  width: 100%;
+  display: flex-start;
+  flex-direction: column;
+}
+.bodyImage {
+  float: right;
+  padding-right: 10%;
+  flex-basis: 40%
+}
+.bodyText {
+  float: left;
+  clear: left;
+}
+.bodyText a{
+  font-size: 150px;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+.bodyText li{
+  font-size: 35px;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color:rgb(111, 111, 111);
+}
+.bodyText h1{
+  font-size: 150px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.aboutContent {
+  position: relative;
+  display: inline;
+  float: left;
+  margin-bottom: 17%;
+  padding-left: 10%;
+  padding-right: 50%;
+}
+.aboutContent h1{
+  font-size: 65px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.aboutContent img{
+  position: absolute;
+  float: right;
+  left: 50%;
+  top: 0%;
+  width: 35%;
+  padding-left: 8%;
+}
+.aboutContent p{
+  letter-spacing: 3px;
+  line-height: 3rem;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+}
+.gridLayout {
+  padding-bottom: 10%;
+  display: grid;
+  gap: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.imgSite{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  display: block;
+}
+.imgCenter{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  display: block;
+}
+.row1 p{
+  padding-top: 10px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+  overflow-wrap: normal;
+}
+.header{
+  padding-left: 5%;
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.card {
+  grid-row: 1;
+  box-sizing: border-box;
+  width: 450px;
+  height: 500px;
+  background: rgb(25, 25, 25);
+  border: 1px solid rgb(96,90,213);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  padding: 3%;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.card:hover {
+  border: 1px solid rgb(36,178,0);
+  transform: scale(1.05);
+}
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card p{
+  padding: 5%;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+  overflow-wrap: normal;
+}
