@@ -41,8 +41,8 @@ export default function Home() {
                 title="Github"
                 target="_blank"
               >
-                <Image src={gitHub} />
-                <Image src={gitHubHover} />
+                <Image alt={"GitHub"} src={gitHub} />
+                <Image alt={"GitHub Hover"} src={gitHubHover} />
               </Link>
             </li>
             <li className={styles.navLineLast}>
@@ -51,8 +51,8 @@ export default function Home() {
                 href="https://www.linkedin.com/in/jacobpikul/"
                 target="_blank"
               >
-                <Image src={linkedIn} />
-                <Image src={linkedInHover} />
+                <Image alt={"LinkedIn"} src={linkedIn} />
+                <Image alt={"LinkedIn Hover"} src={linkedInHover} />
               </Link>
             </li>
           </ul>
@@ -60,7 +60,7 @@ export default function Home() {
         <div className={styles.bodyContent}>
           <div className={styles.bodyText}>
             <a>Hello,</a>
-            <h1>I'm Jacob</h1>
+            <h1>{"I'm Jacob"}</h1>
             <ul>
               <li>Appian Developer</li>
               <li>Full Stack Developer</li>
@@ -68,7 +68,12 @@ export default function Home() {
             </ul>
           </div>
           <div className={styles.bodyImage}>
-            <img src="Keyboard.png" />
+            <Image
+              alt={"Keyboard"}
+              src="/Keyboard.png"
+              width={718}
+              height={526}
+            />
           </div>
         </div>
       </main>

@@ -6,6 +6,7 @@ import gitHub from "/public/Layer 3.png";
 import gitHubHover from "/public/Layer 3Hover.png";
 import linkedIn from "/public/Layer 4.png";
 import linkedInHover from "/public/Layer 4Hover.png";
+import unccImg from "/public/8716-01 Charlotte Master File v7_1.png";
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
             CSS, Appian, a little Python, SQL, C#, React, React Native, NextJS,
             and JavaScript.
           </p>
-          <img src="https://brand.charlotte.edu/sites/brand.charlotte.edu/files/media/8716-01%20Charlotte%20Master%20File%20v7_1.png" />
+          <Image src={unccImg} width={1331} height={400} />
         </div>
       </main>
     </>
