@@ -1,6 +1,11 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import gitHub from "/public/Layer 3.png";
+import gitHubHover from "/public/Layer 3Hover.png";
+import linkedIn from "/public/Layer 4.png";
+import linkedInHover from "/public/Layer 4Hover.png";
 
 export default function Home() {
   return (
@@ -36,8 +41,8 @@ export default function Home() {
                 title="Github"
                 target="_blank"
               >
-                <img src="Layer 3.png" />
-                <img src="Layer 3Hover.png" />
+                <Image src={gitHub} />
+                <Image src={gitHubHover} />
               </Link>
             </li>
             <li className={styles.navLineLast}>
@@ -46,8 +51,8 @@ export default function Home() {
                 href="https://www.linkedin.com/in/jacobpikul/"
                 target="_blank"
               >
-                <img src="Layer 4.png" />
-                <img src="Layer 4Hover.png" />
+                <Image src={linkedIn} />
+                <Image src={linkedInHover} />
               </Link>
             </li>
           </ul>

@@ -1,6 +1,14 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import gitHub from "/public/Layer 3.png";
+import gitHubHover from "/public/Layer 3Hover.png";
+import linkedIn from "/public/Layer 4.png";
+import linkedInHover from "/public/Layer 4Hover.png";
+import websiteImage from "/public/website.jpg";
+import ueImage from "/public/ue-logo-stacked-unreal-engine-w-677x545-fac11de0943f.png";
+import reactImage from "/public/React-icon.png";
 
 export default function Home() {
   return (
@@ -36,8 +44,8 @@ export default function Home() {
                 title="Github"
                 target="_blank"
               >
-                <img src="Layer 3.png" />
-                <img src="Layer 3Hover.png" />
+                <Image src={gitHub} />
+                <Image src={gitHubHover} />
               </Link>
             </li>
             <li className={styles.navLineLast}>
@@ -46,8 +54,8 @@ export default function Home() {
                 href="https://www.linkedin.com/in/jacobpikul/"
                 target="_blank"
               >
-                <img src="Layer 4.png" />
-                <img src="Layer 4Hover.png" />
+                <Image src={linkedIn} />
+                <Image src={linkedInHover} />
               </Link>
             </li>
           </ul>
@@ -62,16 +70,23 @@ export default function Home() {
               This site itself is one of my projects! Helped me learn the basics
               of NextJS
             </p>
-            <img src="website.jfif" className={styles.imgSite} />
+            <Image
+              src={websiteImage}
+              className={styles.imgSite}
+              width={480}
+              height={200}
+            />
           </div>
           <div className={styles.card}>
             Game Development
             <p>
               Learning C++ and/or C# is the next task on my list for Game Dev
             </p>
-            <img
+            <Image
               className={styles.imgCenter}
-              src="ue-logo-stacked-unreal-engine-w-677x545-fac11de0943f.png"
+              src={ueImage}
+              width={340}
+              height={200}
             />
           </div>
           <div className={styles.card}>
@@ -80,7 +95,12 @@ export default function Home() {
               Start to learn React Native, Flutter, etc to build mobile
               applications
             </p>
-            <img className={styles.imgCenter} src="React-icon.png" />
+            <Image
+              className={styles.imgCenter}
+              src={reactImage}
+              width={230}
+              height={220}
+            />
           </div>
         </div>
       </main>
