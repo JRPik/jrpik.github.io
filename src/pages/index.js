@@ -41,8 +41,8 @@ export default function Home() {
                 title="Github"
                 target="_blank"
               >
-                <Image alt={"GitHub"} src={gitHub} />
-                <Image alt={"GitHub Hover"} src={gitHubHover} />
+                <Image alt={"GitHub"} src={gitHub} width={35} />
+                <Image alt={"GitHub Hover"} src={gitHubHover} width={35} />
               </Link>
             </li>
             <li className={styles.navLineLast}>
@@ -51,8 +51,8 @@ export default function Home() {
                 href="https://www.linkedin.com/in/jacobpikul/"
                 target="_blank"
               >
-                <Image alt={"LinkedIn"} src={linkedIn} />
-                <Image alt={"LinkedIn Hover"} src={linkedInHover} />
+                <Image alt={"LinkedIn"} src={linkedIn} width={35} />
+                <Image alt={"LinkedIn Hover"} src={linkedInHover} width={35} />
               </Link>
             </li>
           </ul>
